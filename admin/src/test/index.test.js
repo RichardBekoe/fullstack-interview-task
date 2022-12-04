@@ -34,7 +34,6 @@ describe('Test API requests', () => {
         .expect(200)
         .end((err, res) => {
             expect(res.body).toEqual(expectedResponse)
-            console.log("get error", err)
             done();
         })
     })
@@ -43,7 +42,6 @@ describe('Test API requests', () => {
         .post('/admin/users/report')
         .expect(200)
         .end((err, res) => {
-            console.log("post error", err)
             done();
         })
     })

@@ -44,7 +44,6 @@ app.post("/admin/users/report", async (req, res) => {
     }, []);
 
     const csvReport = createCSV(allUserHoldings);
-    console.log("CSV Report", csvReport)
     await postReportToExportRoute(csvReport);
 
     res.send("User holdings report created");

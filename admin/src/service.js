@@ -19,7 +19,6 @@ const getAllInvestments = async () => {
 
 const postReportToExportRoute = async (csvReport) => {
   const json = JSON.stringify({ export: csvReport})
-  console.log("Print JSON", json)
     axios.post(`${config.investmentsServiceUrl}/investments/export`, json, {
         headers: {
           "content-type": "application/json",

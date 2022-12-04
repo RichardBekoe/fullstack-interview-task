@@ -54,10 +54,12 @@ app.post("/admin/users/report", async (req, res) => {
   }
 });
 
-app.listen(config.port, (err) => {
+const server = app.listen(config.port, (err) => {
   if (err) {
     console.error("Error occurred starting the server", err)
     process.exit(1)
   }
   console.log(`Server running on port ${config.port}`)
 })
+
+module.exports = server

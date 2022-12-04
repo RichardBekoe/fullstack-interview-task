@@ -12,6 +12,12 @@ Admin - localhost:8083
 - `/admin/investments/:id` GET an investment record by id using the admin service
 - `/admin/users/report` POST user holdings report to /investments/export route
 
+ How to run any additional scripts or tests
+
+- to run test (admin/src/test/index.test.js)
+- run `npm start` in both the 'investments' and 'financial-companies' service
+- run `npm run test` in the 'admin' service
+
 ## Requirements
 
 - An admin is able to generate a csv formatted report showing the values of all user holdings

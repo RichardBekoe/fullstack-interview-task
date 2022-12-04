@@ -6,10 +6,11 @@ A request for a new admin feature has been received
 
 ## Deliverables
 
-- New and updated routes
+New and updated routes
 
-- Admin - localhost:8083
-- `/admin/investments/:id` get an investment record by id using the admin service
+Admin - localhost:8083
+- `/admin/investments/:id` GET an investment record by id using the admin service
+- `/admin/users/report` POST user holdings report to /investments/export route
 
 ## Requirements
 

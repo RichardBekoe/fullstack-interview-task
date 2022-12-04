@@ -4,6 +4,13 @@ At Moneyhub we use microservices to partition and separate the concerns of the c
 
 A request for a new admin feature has been received
 
+## Deliverables
+
+- New and updated routes
+
+- Admin - localhost:8083
+- `/admin/investments/:id` get an investment record by id using the admin service
+
 ## Requirements
 
 - An admin is able to generate a csv formatted report showing the values of all user holdings
@@ -72,6 +79,3 @@ Investments - localhost:8081
 Financial Companies - localhost:8082
 - `/companies` get all companies details
 - `/companies/:id` get company by id
-
-Admin - localhost:8083
-- `/investments/:id` get an investment record by id
